@@ -1,4 +1,7 @@
-pre_window: your studio directory && source bin/activate
+name: studio
+root: ~/gliacloud/studio
+
+pre_window: source bin/activate
 
 windows:
   - editor:
