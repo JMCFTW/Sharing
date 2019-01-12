@@ -1,8 +1,4 @@
-
-name: studio
-root: ~/
-
-pre_window: j studio && source bin/activate
+pre_window: your studio directory && source bin/activate
 
 windows:
   - editor:
@@ -18,5 +14,5 @@ windows:
            - pip install -r requirements.txt -U && pip install g8 -U
            - src/ && python manage.py runserver 8001
 
-        - j frontend && npm run dev
+        - src/studio/frontend && npm run dev
         - src/ && python manage.py worker
