@@ -1,0 +1,22 @@
+
+name: studio
+root: ~/
+
+pre_window: j studio && source bin/activate
+
+windows:
+  - editor:
+      layout: even-horizontal
+      # Synchronize all panes of this window, can be enabled before or after the pane commands run.
+      # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
+      # synchronize: after
+      panes:
+        - editor:
+           - git checkout master
+           - git pull
+           - code .
+           - pip install -r requirements.txt -U && pip install g8 -U
+           - src/ && python manage.py runserver 8001
+
+        - j frontend && npm run dev
+        - src/ && python manage.py worker
