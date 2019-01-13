@@ -1,10 +1,12 @@
-# Gliacloud-tmux-workflow
+# Gliacloud-improve-advise
 
 Open any project, and upgrade all requirement automatically.
 
-## 1. Install Tmux
+## Part1. Tmux + Tmuxinator
 
-### Mac OS
+### 1. Install Tmux
+
+#### Mac OS
 
 
 ```
@@ -12,7 +14,7 @@ brew update
 brew install tmux
 ```
 
-### Debian / Ubuntu
+#### Debian / Ubuntu
 
 ```
 sudo apt-get install tmux
@@ -27,13 +29,13 @@ Ctrl + F 後, 按d (暫時離開這個window)
 Ctrl + F 後, 按z (將當前Panel縮放)
 ```
 
-## 2. Install tmuxinator
+### 2. Install tmuxinator
 
 ```
 gem install tmuxinator
 ```
 
-## 3. create a new tmuxinator project and start it
+### 3. create a new tmuxinator project and start it
 
 Copy [this](https://github.com/JMCFTW/Gliacloud-tmux-workflow/blob/master/tmuxinator_project_studio.txt/)
 Create new project by follwing command
@@ -48,5 +50,6 @@ tmuxinator start project_name
 ```
 
 
+## Part2. pyenv + pyenv-virtualenv
 
-
+To be continued..
