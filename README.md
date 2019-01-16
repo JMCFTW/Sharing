@@ -51,5 +51,8 @@ tmuxinator start project_name
 
 
 ## Part2. pyenv + pyenv-virtualenv
-
-To be continued..
+installation
+```
+https://github.com/pyenv/pyenv
+https://github.com/pyenv/pyenv-virtualenv
+```
