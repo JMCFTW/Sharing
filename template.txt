@@ -18,7 +18,7 @@ windows:
       panes:
         - gstudio:
            - code .
-           - pip install -r requirements.txt && pip install g8 -U
+           - pip install -r requirements.txt -U && pip install g8 -U
            - src/
 
         - src/studio/frontend && npm run dev
@@ -29,7 +29,7 @@ windows:
       panes:
         - gchannel:
            - code .
-           - pip install -r requirements.txt && pip install g8 -U
+           - pip install -r requirements.txt -U && pip install g8 -U
            - src/
 
   - gmediasearch:
@@ -38,7 +38,7 @@ windows:
       panes:
         - gmediasearch:
            #- code .
-           - pip install -r requirements.txt && pip install g8 -U
+           - pip install -r requirements.txt -U && pip install g8 -U
            - src/
 
   - gstorage:
@@ -47,7 +47,7 @@ windows:
       panes:
         - gstorage:
            #- code .
-           - pip install -r requirements.txt && pip install g8 -U
+           - pip install -r requirements.txt -U && pip install g8 -U
            - src/
 
 
@@ -57,7 +57,7 @@ windows:
       panes:
         - gcomposer:
            #- code .
-           - pip install -r requirements.txt && pip install g8 -U
+           - pip install -r requirements.txt -U && pip install g8 -U
            - src/
 
 
@@ -67,7 +67,7 @@ windows:
       panes:
         - genv:
            #- code .
-           - pip install -r requirements.txt && pip install g8 -U
+           - pip install -r requirements.txt -U && pip install g8 -U
 
   - gparsed:
       layout: even-horizontal  
@@ -75,7 +75,7 @@ windows:
       panes:
         - gparsed:
            #- code .
-           - pip install -r requirements.txt && pip install g8 -U
+           - pip install -r requirements.txt -U && pip install g8 -U
            - src/
 
 
@@ -85,7 +85,7 @@ windows:
       panes:
         - gqueue:
            #- code .
-           - pip install -r requirements.txt && pip install g8 -U
+           - pip install -r requirements.txt -U && pip install g8 -U
            - src/
 
 

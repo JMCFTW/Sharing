@@ -37,7 +37,7 @@ gem install tmuxinator
 
 ### 3. create a new tmuxinator project and start it
 
-Copy [this](https://github.com/JMCFTW/Gliacloud-tmux-workflow/blob/master/tmuxinator_project_studio.txt/)
+Copy [this](https://github.com/JMCFTW/Gliacloud-tmux-workflow/blob/master/template.txt/)
 Create new project by follwing command
 ```
 tmuxinator new project_name
