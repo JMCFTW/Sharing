@@ -27,6 +27,8 @@ sudo apt-get install tmux
 Ctrl + F 後, 按鍵盤上下左右 (在不同的Pane中移動)
 Ctrl + F 後, 按d (暫時離開這個window)
 Ctrl + F 後, 按z (將當前Panel縮放)
+Ctrl + F 後, 按w (選擇要進入哪個window)
+Ctrl + F 後, 按c (新增一個window)
 ```
 
 ### 2. Install tmuxinator
