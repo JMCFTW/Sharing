@@ -2,7 +2,7 @@
 
 # /Users/chenjiemin/.config/tmuxinator/studio.yml
 
-name: studio
+name: gliacloud
 root: ~/
 
 
@@ -11,26 +11,26 @@ pre_window: git checkout master && git pull origin master
 windows:
   - gstudio:
       layout: even-horizontal
-      root: ~/gliacloud/studio/
+      root: ~/gliacloud/gstudio/
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
         - gstudio:
-           - code .
+           # - code .
            - pip install -r requirements.txt -U && pip install g8 -U
-           - src/
+           # - src/
 
-        - src/studio/frontend && npm run dev
+        - src/studio/frontend
 
   - gchannel:
       layout: even-horizontal
       root: ~/gliacloud/gchannel/
       panes:
         - gchannel:
-           - code .
+           # - code .
            - pip install -r requirements.txt -U && pip install g8 -U
-           - src/
+           # - src/
 
   - gmediasearch:
       layout: even-horizontal
@@ -39,7 +39,7 @@ windows:
         - gmediasearch:
            #- code .
            - pip install -r requirements.txt -U && pip install g8 -U
-           - src/
+           # - src/
 
   - gstorage:
       layout: even-horizontal
@@ -48,46 +48,4 @@ windows:
         - gstorage:
            #- code .
            - pip install -r requirements.txt -U && pip install g8 -U
-           - src/
-
-
-  - gcomposer:
-      layout: even-horizontal
-      root: ~/gliacloud/gcomposer/
-      panes:
-        - gcomposer:
-           #- code .
-           - pip install -r requirements.txt -U && pip install g8 -U
-           - src/
-
-
-  - genv:
-      layout: even-horizontal
-      root: ~/gliacloud/gcomposer/
-      panes:
-        - genv:
-           #- code .
-           - pip install -r requirements.txt -U && pip install g8 -U
-
-  - gparsed:
-      layout: even-horizontal  
-      root: ~/gliacloud/gparsed/
-      panes:
-        - gparsed:
-           #- code .
-           - pip install -r requirements.txt -U && pip install g8 -U
-           - src/
-
-
-  - gqueue:
-      layout: even-horizontal
-      root: ~/gliacloud/gqueue/
-      panes:
-        - gqueue:
-           #- code .
-           - pip install -r requirements.txt -U && pip install g8 -U
-           - src/
-
-
-
-
+           # - src/
