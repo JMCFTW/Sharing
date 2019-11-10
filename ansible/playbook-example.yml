@@ -1,0 +1,14 @@
+- hosts: all
+  tasks:
+    - name: Test
+      command: 'python ~/side-project/Gliacloud-sharing/ansible/test.py'
+      register: command_result
+      ignore_errors: True
+
+    - name: After test fail
+      command: 'echo {{ fail_text }}'
+      when: 'command_result.rc == 1'
+
+    - name: After test success
+      command: 'echo {{ success_text }}'
+      when: 'command_result.rc == 0'
