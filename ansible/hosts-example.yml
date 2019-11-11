@@ -5,5 +5,5 @@ all:
                 jimmy:
             vars:
                 ansible_connection: local
-                success_text: 發大財
-                fail_text: 國家機器動得非常厲害
+                success_text: "發大財"
+                fail_text: "國家機器動得非常厲害"
