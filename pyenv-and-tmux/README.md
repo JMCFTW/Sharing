@@ -2,4 +2,4 @@
 2. 介紹什麼是Tmux, Tmuxinator以及如何使用它們
 
 paper:
-https://hackmd.io/B5toD0eKQC-Sv_NUEkirJw?both
+https://hackmd.io/@jimmychen945/BkSJmVfwV
