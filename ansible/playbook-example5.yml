@@ -1,0 +1,16 @@
+- hosts: all
+  tasks:
+    - name: hello
+      command: echo "Hello"
+      notify: "echooooo"
+    - name: jimmy
+      command: echo "Jimmy"
+      notify: "echooooo"
+
+  handlers:
+    - name: echo "RRR"
+      command: echo "RRR"
+      listen: "echooooo"
+    - name: echo "YYY"
+      command: echo "YYY"
+      listen: "echooooo"

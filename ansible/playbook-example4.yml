@@ -1,0 +1,18 @@
+- hosts: all
+  tasks:
+  - name: 'async-sleep'
+    command: sleep 5
+    async: 1
+    poll: 0
+    register: sleeper
+
+  - name: 'echo'
+    command: echo "hello"
+
+  - name: 'check on async task'
+    async_status:
+      jid: "{{ sleeper.ansible_job_id }}"
+    register: job_result
+    until: job_result.finished
+    retries: 5
+    delay: 1
