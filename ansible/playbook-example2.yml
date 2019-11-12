@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+    - name: Loop
+      debug:
+        msg: "{{ item }}"
+      loop:
+        - "塞子"
+        - "棋子"
+

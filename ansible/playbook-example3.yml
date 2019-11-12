@@ -1,0 +1,14 @@
+- hosts: all
+  tasks:
+    - name: 我4年任期啊！絕對繼續做，2020現在不在我考量
+      fail:
+        msg: "做滿4年？誰說？是我說還是？我在哪裡說？"
+      when: item == 1
+      until: item == 4
+      loop:
+        - 1
+        - 2
+        - 3
+        - 4
+      retries: 4
+      delay: 5
