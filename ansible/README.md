@@ -1,4 +1,4 @@
 介紹Ansible
 
-paper:
+Slide:
 https://hackmd.io/@jimmychen945/Byz4pD1-8
